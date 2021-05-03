@@ -1,17 +1,17 @@
 fn main() {
     
-    print!("{}", "Randon number between 0 and 255: ");
+    print!("{}", "Random number between 0 and 255: ");
     println!("{}", gen(255));
-    print!("{}", "Randon number between 0 and 231: ");
+    print!("{}", "Random number between 0 and 231: ");
     println!("{}", gen(231));
        
 }
-// Solution using 16 bit integers, works for both values. 
+
 fn gen(a: u16) -> u16 {
     
-    let mut val = a+1;
+    let mut val = a + 1;
     
-    while val >=a+1 {
+    while val > = a + 1 {
 
         // initiate empty string
         let mut binstring = String::new();
